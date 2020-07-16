@@ -23,8 +23,7 @@ type Student struct {
 
 //给结构体实现String方法,当使用"&"时,默认会调用String()	//类似Java toString()
 func (s *Student) String() string {
-	str := fmt.Sprintf("Name=[%v] Age=[%v]", s.Name, s.Age)
-	return str
+	return fmt.Sprintf("{Name=%v,Age=%v}", s.Name, s.Age)
 }
 
 func main() {
@@ -37,8 +36,8 @@ func main() {
 	fmt.Println("返回值是myint类型:res=", res)
 
 	//======================================================
-	//stu := Student{Name: "tom",Age: 18}	//2种写法
+	//student := Student{Name: "tom",Age: 18}	//2种写法
 	stu := Student{"tom", 18}
-	//Name=[tom] Age=[18]
+	//{Name=tom,Age=18}
 	fmt.Println(&stu)
 }
