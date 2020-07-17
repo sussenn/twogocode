@@ -46,6 +46,9 @@ func (c Computer) Working(usb Usb) {
 }
 
 func main() {
+	//所有类型都实现了 空接口. 即任何变量都可以赋值给空接口
+	//var xxx interface{}
+	//------------------------------------------------------------
 	com := Computer{}
 	phone := Phone{}
 	tv := TV{}

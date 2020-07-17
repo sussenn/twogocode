@@ -7,7 +7,7 @@ import (
 )
 
 //结构体切片排序 sort.Sort()方法的实现.	底层是快速排序
-//1. sort.Sort()方法要求传参Interface接口,而Interface需要实现3个方法
+//1. sort.Sort()方法要求传参Interface接口类型,而Interface需要实现3个方法
 //2. 使结构体切片HeroSlice 实现该接口3个方法,即可使用sort.Sort()方法
 type Hero struct {
 	Name string
