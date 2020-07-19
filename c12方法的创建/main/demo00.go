@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//"方法": 需要传参当前对象(结构体),为了能调用当前对象里的各个方法
 type Man struct {
 	Name string
 	Age  int
